@@ -1,0 +1,30 @@
+---
+    import Layout from '../layouts/Layout.astro';
+    import Header from '../layouts/Header.astro';
+    import Footer from '../layouts/Footer.astro';
+---
+
+<Layout title="404">
+    <div class="errorpage">
+        <Header></Header>
+    </div>
+    <main>
+        <section class="section section--pad errorpage">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>404</h1>
+                        <h2>PAGE NOT FOUND!</h2>
+                        <p>We could not find the page you were looking for. Meanwhile, you may return to <a
+                                href="/">home page.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="errorpage">
+        <Footer></Footer>
+    </div>
+
+</Layout>

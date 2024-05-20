@@ -1,0 +1,72 @@
+---
+export interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+import "../styles/app.scss";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robot" content="noindex, nofollow" />
+    <link rel="icon" type="image/svg+xml" href="/fav-icon.png" />
+    <link rel="apple-touch-icon" href="/fav-icon.png" />
+    <meta name="theme-color" content="#b2142d" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Best Field Service Management Software and FSM App - Zuper</title>
+    <meta
+      name="description"
+      content="The best field service management software for businesses of any size. Simplify & streamline work orders, estimates, invoices, scheduling, timesheets & more."
+    />
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script
+      src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/countup.min.js"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"
+      defer></script>
+  </head>
+  <body>
+    <div class="showContent"><slot /></div>
+    <div class="cursor">
+      <div class="cursorcircle cursorcircle--big"></div>
+      <div class="cursorcircle cursorcircle--small"></div>
+      <div class="card_cursor"></div>
+    </div>
+
+    <script defer hoist>
+      import "../js/main";
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"
+    ></script>
+  </body>
+</html>

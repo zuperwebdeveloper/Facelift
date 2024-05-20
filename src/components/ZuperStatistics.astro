@@ -1,0 +1,58 @@
+---
+import user from "../images/user.png";
+import dashboard from "../images/dashboard.png";
+import timeline from "../images/timeline.png";
+import map from "../images/map.png";
+import { Image } from "astro:assets";
+---
+
+<section class="ZuperStatistics">
+  <div class="text-center container">
+    <h4 class="text-5xl font-black pb-6 text-[#12344D]">6 Million</h4>
+    <p class="text-2xl text-[#12344D]">Work Orders Completed Using Zuper</p>
+    <div
+      class="container w-full sm:w-full md:w-full lg:w-9/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center items-start gap-9 md:gap-12 mx-auto pt-12 pb-12"
+    >
+      <div class="inner_clm1">
+        <p class="block text-[#12344D] font-normal text-2xl text-left">
+          <span
+            class="block text-5xl lg:text-8xl text-[#FD5000] font-black"
+            id="count">31%</span
+          >
+          Average increase in revenue
+        </p>
+        <Image class="pt-8" src={user} alt="user" />
+      </div>
+      <div class="inner_clm1">
+        <Image class="pb-8" src={map} alt="map" />
+        <p class="block text-[#12344D] font-normal text-2xl text-left">
+          <span
+            class="block text-5xl lg:text-8xl text-[#FD5000] font-black"
+            id="count">3 Hrs</span
+          >
+          Average time saved per team member a day
+        </p>
+      </div>
+      <div class="inner_clm3">
+        <p class="block text-[#12344D] font-normal text-2xl text-left">
+          <span
+            class="block text-5xl lg:text-8xl text-[#FD5000] font-black"
+            id="count">15%</span
+          >
+          Average increase in bookings
+        </p>
+        <Image class="pt-8" src={timeline} alt="user" />
+      </div>
+      <div class="inner_clm4">
+        <Image class="pb-8" src={dashboard} alt="map" />
+        <p class="block text-[#12344D] font-normal text-2xl text-left">
+          <span
+            class="block text-5xl lg:text-8xl text-[#FD5000] font-black"
+            id="count">50%</span
+          >
+          Reduction in time to schedule
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

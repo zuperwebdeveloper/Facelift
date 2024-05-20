@@ -1,0 +1,253 @@
+---
+import productdashboard from "../images/product-dashboard.png";
+import { Image } from "astro:assets";
+---
+
+<section class="Productmodule">
+  <div class="container">
+    <div x-data="{ openTab: 1 }" class="product-tab-container">
+      <ul class="flex flex-wrap text-sm font-medium text-center">
+        <li class="me-1 tabs active" data-tab="bb_0" x-on:click="openTab = 1">
+          <a
+            href="javascript:;"
+            aria-current="page"
+            class="inline-block p-3 bg-[#12344D] rounded-tl-lg dark:text-white text-[18px]"
+            ><span
+              class="align-middle inline-flex items-center pr-3 w-[26px] h-[26px]"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 27"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_41_6222)">
+                  <path
+                    d="M24.07 2.76001H1.03003"
+                    stroke="white"
+                    stroke-width="2.06"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                  <path
+                    d="M14.81 5.52C16.3343 5.52 17.57 4.28431 17.57 2.76C17.57 1.23569 16.3343 0 14.81 0C13.2857 0 12.05 1.23569 12.05 2.76C12.05 4.28431 13.2857 5.52 14.81 5.52Z"
+                    fill="white"></path>
+                  <path
+                    d="M1.03003 13.1899H24.07"
+                    stroke="white"
+                    stroke-width="2.06"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                  <path
+                    d="M9.09002 15.9499C10.6143 15.9499 11.85 14.7142 11.85 13.1899C11.85 11.6656 10.6143 10.4299 9.09002 10.4299C7.56571 10.4299 6.33002 11.6656 6.33002 13.1899C6.33002 14.7142 7.56571 15.9499 9.09002 15.9499Z"
+                    fill="white"></path>
+                  <path
+                    d="M1.03003 23.26H24.07"
+                    stroke="white"
+                    stroke-width="2.06"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                  <path
+                    d="M17.67 26.02C19.1943 26.02 20.43 24.7843 20.43 23.26C20.43 21.7357 19.1943 20.5 17.67 20.5C16.1457 20.5 14.91 21.7357 14.91 23.26C14.91 24.7843 16.1457 26.02 17.67 26.02Z"
+                    fill="white"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_41_6222">
+                    <rect width="25.1" height="26.03" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg></span
+            >Customizability</a
+          >
+        </li>
+        <li class="me-1 tabs" data-tab="bb_1" x-on:click="openTab = 2">
+          <a
+            href="javascript:;"
+            class="inline-block p-3 bg-[#12344D] dark:text-white text-[18px]"
+            ><span
+              class="align-middle inline-flex items-center pr-3 w-[25px] h-[26px]"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 33"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_41_6181)">
+                  <g>
+                    <path
+                      d="M10.15 26.12C11.4865 26.12 12.57 25.0366 12.57 23.7C12.57 22.3635 11.4865 21.28 10.15 21.28C8.81345 21.28 7.72998 22.3635 7.72998 23.7C7.72998 25.0366 8.81345 26.12 10.15 26.12Z"
+                      fill="white"></path>
+                    <path
+                      d="M15.96 1.04004H4.02999C2.37999 1.04004 1.04999 2.40004 1.04999 4.07004V28.28C1.04999 29.95 2.38999 31.31 4.02999 31.31H15.97C17.62 31.31 18.95 29.95 18.95 28.28V4.07004C18.95 2.40004 17.61 1.04004 15.97 1.04004H15.96Z"
+                      stroke="white"
+                      stroke-width="2.08"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_41_6181">
+                    <rect width="19.99" height="32.35" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg></span
+            >Mobile</a
+          >
+        </li>
+        <li class="tabs" data-tab="bb_2" x-on:click="openTab = 3">
+          <a
+            href="javascript:;"
+            class="inline-block p-3 bg-[#12344D] rounded-tr-lg dark:text-white text-[18px]"
+            ><span
+              class="align-middle inline-flex items-center pr-3 w-[26px] h-[26px]"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 23"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_41_6213)">
+                  <g>
+                    <path
+                      d="M1.03 21.53L6 14.73L15.31 11.85L24.07 1.03003"
+                      stroke="white"
+                      stroke-width="2.06"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                    <path
+                      d="M5.99999 17.3701C7.5243 17.3701 8.75999 16.1344 8.75999 14.6101C8.75999 13.0858 7.5243 11.8501 5.99999 11.8501C4.47568 11.8501 3.23999 13.0858 3.23999 14.6101C3.23999 16.1344 4.47568 17.3701 5.99999 17.3701Z"
+                      fill="white"></path>
+                    <path
+                      d="M15.31 14.6101C16.8343 14.6101 18.07 13.3744 18.07 11.8501C18.07 10.3258 16.8343 9.09009 15.31 9.09009C13.7857 9.09009 12.55 10.3258 12.55 11.8501C12.55 13.3744 13.7857 14.6101 15.31 14.6101Z"
+                      fill="white"></path>
+                    <path
+                      d="M21.46 7.41014C22.9843 7.41014 24.22 6.17444 24.22 4.65014C24.22 3.12583 22.9843 1.89014 21.46 1.89014C19.9357 1.89014 18.7 3.12583 18.7 4.65014C18.7 6.17444 19.9357 7.41014 21.46 7.41014Z"
+                      fill="white"></path>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_41_6213">
+                    <rect width="25.1" height="22.56" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg></span
+            >Analytics</a
+          >
+        </li>
+      </ul>
+      <div
+        class="bg-[#12344D] current_tab mt-2 border rounded-2xl px-5 py-10 content"
+      >
+        <div
+          x-show="openTab === 1"
+          class="transition-all duration-300 rounded-lg shadow-md tab-content active"
+          id="bb_0"
+        >
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <div class="tut_leftbox">
+                <p class="text-4xl text-white font-bold md:w-9/12">
+                  Customize, deploy, and manage <span class="text-[#FD5000]"
+                    >all in one place.</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <div class="tut_rightbox">
+                <p class="text-lg text-white text-left">
+                  Zuper is easy! It was the natural choice given that it is so
+                  highly flexible and customizable and doesn't require heavy
+                  tech resources to set it up and manage it. This all leads to a
+                  quick ROI for my clients.
+                </p>
+                <div class="more pt-4">
+                  <a
+                    class="more-actions d-flex align-middle text-white"
+                    href="javascripr:;"
+                    >Watch Demo <span class="ri-arrow-right-line"></span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4 class="pt-8 text-3xl text-white pb-4">
+            Add a widget to start customizing your dashboard
+          </h4>
+          <Image class="" src={productdashboard} alt="productdashboard" />
+        </div>
+        <div
+          x-show="openTab === 2"
+          class="transition-all duration-300 rounded-lg shadow-md tab-content"
+          id="bb_1"
+        >
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <div class="tut_leftbox">
+                <p class="text-4xl text-white font-bold md:w-9/12">
+                  Customize, deploy, and manage <span class="text-[#FD5000]"
+                    >all in one place.</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <div class="tut_rightbox">
+                <p class="text-lg text-white text-left">
+                  Zuper is easy! It was the natural choice given that it is so
+                  highly flexible and customizable and doesn't require heavy
+                  tech resources to set it up and manage it. This all leads to a
+                  quick ROI for my clients.
+                </p>
+                <div class="more pt-4">
+                  <a
+                    class="more-actions d-flex align-middle text-white"
+                    href="javascripr:;"
+                    >Watch Demo <span class="ri-arrow-right-line"></span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4 class="pt-8 text-3xl text-white pb-4">
+            Add a widget to start customizing your dashboard
+          </h4>
+          <Image class="" src={productdashboard} alt="productdashboard" />
+        </div>
+        <div
+          x-show="openTab === 3"
+          class="transition-all duration-300 rounded-lg shadow-md tab-content"
+          id="bb_2"
+        >
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <div class="tut_leftbox">
+                <p class="text-4xl text-white font-bold md:w-9/12">
+                  Customize, deploy, and manage <span class="text-[#FD5000]"
+                    >all in one place.</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <div class="tut_rightbox">
+                <p class="text-lg text-white text-left">
+                  Zuper is easy! It was the natural choice given that it is so
+                  highly flexible and customizable and doesn't require heavy
+                  tech resources to set it up and manage it. This all leads to a
+                  quick ROI for my clients.
+                </p>
+                <div class="more pt-4">
+                  <a
+                    class="more-actions d-flex align-middle text-white"
+                    href="javascripr:;"
+                    >Watch Demo <span class="ri-arrow-right-line"></span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4 class="pt-8 text-3xl text-white pb-4">
+            Add a widget to start customizing your dashboard
+          </h4>
+          <Image class="" src={productdashboard} alt="productdashboard" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

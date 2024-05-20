@@ -1,0 +1,26 @@
+.errorpage{
+    .header{
+        position: relative;
+    }
+    h1{
+        font-size: var(--fs-65);
+        color: var(--clr-primary-100);
+    }
+    h2{
+        font-size: var(--fs-50);
+        color: var(--clr-general-gray);
+    }
+    p{
+        color: var(--clr-general-gray);
+        a{
+            color: var(--clr-primary-100);
+        }
+    }
+    .footer{
+        padding: 35px 0px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}

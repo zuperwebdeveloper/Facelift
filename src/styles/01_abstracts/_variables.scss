@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+$font-family-primary: "DM Sans", sans-serif;
+
+// $font-family-primary: "DM Sans", sans-serif;
+// $font-sec-family-primary: "Montserrat", sans-serif;
+// $heading-line-height: 1.2;
+// $body-line-height: 1.5;
+// $html-font: clamp(1rem, 0.9554rem + 0.2232vw, 1.3125rem);
+
+/*=============== Breakpoints ===============*/
+$small-screen: 576px;
+$medium-screen: 768px;
+$large-screen: 992px;
+$tab-screen: 1024px;
+$extra-large-screen: 1200px;
+$dt-medium-screen: 1440px;
+
+/*=============== Heading ===============*/
+$h1: clamp(1.8rem, 3.5vw, 4.1875rem); /* 67px */
+$h1-100: clamp(1.8rem, 4vw, 5.625rem); /* 90px */
+$h2: clamp(1.3rem, 2.5vw, 3.19rem); /* 67px */
+$h3: clamp(1.25rem, 0.95rem + 1.8125vw, 3.125rem); /* 50px */
+$h4: clamp(1.16rem, 1.5625rem + 0.625vw, 2.3125rem); /*  37px*/
+$h5: clamp(1.13rem, 1.15rem + 0.8125vw, 2.125rem); /*  34px*/
+$h6: clamp(1.1rem, 1.2rem + 0.5625vw, 1.875rem); /*  30px*/
+
+/*=============== color ===============*/
+
+$colors: (
+  primary: (
+    100: #12344d,
+    200: #4b5563,
+    300: #fd5000,
+    400: #6b7280,
+    500: #f3f4f6,
+  ),
+  general: (
+    white: #ffffff,
+    black: #000000,
+    gray: #bac2c8,
+    gray100: #3a474f,
+    red: #9f021b,
+  ),
+);
+
+/*=============== font size ===============*/
+
+$font-scales: (
+  fs: (
+    12: 0.571rem,
+    13: 0.619rem,
+    14: 0.667rem,
+    15: 0.714rem,
+    16: 0.762rem,
+    17: 0.81rem,
+    18: 0.857rem,
+    19: 0.905rem,
+    20: 0.952rem,
+    21: 1rem,
+    22: 1.048rem,
+    24: 1.143rem,
+    25: 1.19rem,
+    26: 1.238rem,
+    28: 1.333rem,
+    30: 1.429rem,
+    32: 1.524rem,
+    34: 1.619rem,
+    35: 1.667rem,
+    36: 1.714rem,
+    37: 1.762rem,
+    38: 1.81rem,
+    40: 1.905rem,
+    42: 2rem,
+    44: 2.095rem,
+    45: 2.143rem,
+    50: 2.381rem,
+    52: 2.476rem,
+    54: 2.571rem,
+    55: 2.619rem,
+    60: 2.857rem,
+    61: 2.905rem,
+    62: 2.952rem,
+    63: 3rem,
+    64: 3.048rem,
+    65: 3.095rem,
+    66: 3.143rem,
+    67: 3.19rem,
+    68: 3.238rem,
+    69: 3.286rem,
+    70: 3.333rem,
+    90: 4.286rem,
+  ),
+);
+
+/*=============== Spacing (margin & padding) ===============*/
+
+$spaces: (
+  space: (
+    10: 0.5rem,
+    15: 0.725rem,
+    20: 1rem,
+    25: 1.25rem,
+    28: 1.3rem,
+    30: 1.5rem,
+    35: 1.75rem,
+    40: 2rem,
+    45: 2.25rem,
+    50: 2.5rem,
+    55: 2.75rem,
+    60: 3rem,
+    65: 3.25rem,
+    70: 3.5rem,
+    75: 3.75rem,
+    80: 4rem,
+    100: 5rem,
+    120: 6.5rem,
+    150: 8rem,
+  ),
+);
+
+/*=============== FontWeight ===============*/
+
+$fontweight: (
+  w: (
+    100: 100,
+    200: 200,
+    300: 300,
+    400: 400,
+    500: 500,
+    600: 600,
+    700: 700,
+    800: 800,
+    900: 900,
+  ),
+);
+
+/*=============== Broder Radius ===============*/
+
+$border: (
+  radius: (
+    10: 0.5rem,
+    20: 1rem,
+    30: 1.5rem,
+    40: 2rem,
+    50: 2.5rem,
+    60: 3rem,
+    70: 3.5rem,
+    80: 4rem,
+    90: 4.5rem,
+    100: 5rem,
+  ),
+);

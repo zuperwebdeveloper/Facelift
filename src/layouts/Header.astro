@@ -1,0 +1,298 @@
+---
+import zuperlogo from "../images/zuer-logo.svg";
+import dummy from "../images/dummy-img.png";
+import { Image } from "astro:assets";
+---
+
+<header class="header">
+  <nav class="nav container">
+    <div class="nav__data">
+      <a href="#" class="nav__logo">
+        <Image src={zuperlogo} alt="logo" title="Zuper" />
+      </a>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-line nav__toggle-menu"></i>
+        <i class="ri-close-line nav__toggle-close"></i>
+      </div>
+    </div>
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li class="dropdown__item nalink">
+          <div class="nav__link dropdown__button">Features</div>
+          <div class="dropdown__container megamenu">
+            <div class="dropdown__content container">
+              <div class="dropdown__group">
+                <div class="Features-clms">
+                  <a href="javascript:;" class="">
+                    <p class="title">Field Service Management</p>
+                  </a>
+                  <div class="product-repo d-grid">
+                    <div class="inner_clm d-flex">
+                      <div class="lft_img">
+                        <span></span>
+                      </div>
+                      <div class="right_cnt">
+                        <h6>Work Order</h6>
+                        <p>
+                          Create, view, edit, manage, and execute all your work
+                          orders
+                        </p>
+                      </div>
+                    </div>
+                    <div class="inner_clm d-flex">
+                      <div class="lft_img">
+                        <span></span>
+                      </div>
+                      <div class="right_cnt">
+                        <h6>Scheduling</h6>
+                        <p>
+                          Create, view, edit, manage, and execute all your work
+                          orders
+                        </p>
+                      </div>
+                    </div>
+                    <div class="inner_clm d-flex">
+                      <div class="lft_img">
+                        <span></span>
+                      </div>
+                      <div class="right_cnt">
+                        <h6>Invoicing</h6>
+                        <p>
+                          Create, view, edit, manage, and execute all your work
+                          orders
+                        </p>
+                      </div>
+                    </div>
+                    <div class="inner_clm d-flex">
+                      <div class="lft_img">
+                        <span></span>
+                      </div>
+                      <div class="right_cnt">
+                        <h6>Dispatching</h6>
+                        <p>
+                          Create, view, edit, manage, and execute all your work
+                          orders
+                        </p>
+                      </div>
+                    </div>
+                    <div class="inner_clm d-flex">
+                      <div class="lft_img">
+                        <span></span>
+                      </div>
+                      <div class="right_cnt">
+                        <h6>Location <br />Intelligence</h6>
+                        <p>
+                          Create, view, edit, manage, and execute all your work
+                          orders
+                        </p>
+                      </div>
+                    </div>
+                    <div class="inner_clm d-flex">
+                      <div class="lft_img">
+                        <span></span>
+                      </div>
+                      <div class="right_cnt">
+                        <h6>Mobile App</h6>
+                        <p>
+                          Create, view, edit, manage, and execute all your work
+                          orders
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="more pt-4">
+                    <a
+                      class="more-actions d-flex align-middle"
+                      href="javascripr:;"
+                      >More Features <span class="ri-arrow-right-line"
+                      ></span></a
+                    >
+                  </div>
+                </div>
+                <div class="platform">
+                  <p class="title">Platform</p>
+                  <div class="right_cnt">
+                    <ul>
+                      <li><a href="javascript:;">App Integrations</a></li>
+                      <li><a href="javascript:;">Marketplace</a></li>
+                      <li><a href="javascript:;">Analytics</a></li>
+                      <li><a href="javascript:;">Zuper App</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown__item nalink">
+          <div class="nav__link dropdown__button">Industry</div>
+          <div class="dropdown__container megamenu">
+            <div class="dropdown__content container">
+              <div class="dropdown__group">
+                <div class="industry-innerclm">
+                  <div class="industry">
+                    <p class="title">Strategy</p>
+                    <ul>
+                      <li><a href="javascript:;">Grow your business</a></li>
+                      <li><a href="javascript:;">Operational efficiency</a></li>
+                      <li><a href="javascript:;">Employee Productivity</a></li>
+                      <li><a href="javascript:;">Customer experience</a></li>
+                    </ul>
+                  </div>
+                  <div class="industry">
+                    <p class="title">Industry</p>
+                    <ul>
+                      <li><a href="javascript:;">Residential Services</a></li>
+                      <li><a href="javascript:;">Commercial Services</a></li>
+                      <li>
+                        <a href="javascript:;">Facility and Maintenance</a>
+                      </li>
+                      <li><a href="javascript:;">Solar and renewable</a></li>
+                      <li>
+                        <a href="javascript:;">Security And Survillenace</a>
+                      </li>
+                    </ul>
+                    <div class="more pt-4">
+                      <a
+                        class="more-actions d-flex align-middle"
+                        href="javascripr:;"
+                        >More Industries <span class="ri-arrow-right-line"
+                        ></span></a
+                      >
+                    </div>
+                  </div>
+                  <div class="industry">
+                    <p class="title">Business</p>
+                    <ul>
+                      <li><a href="javascript:;">Startups</a></li>
+                      <li>
+                        <a href="javascript:;">Small and Mid size business</a>
+                      </li>
+                      <li><a href="javascript:;">Enterprise</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="platform sustomer-story">
+                  <p class="title">Customer Story</p>
+                  <figure>
+                    <Image src={dummy} alt="dummy" />
+                    <figcaption>
+                      <p class="story-title">
+                        Simplo Integrates Real-Time Visibility And Resource
+                        Tracking
+                      </p>
+                      <div class="more pt-4">
+                        <a
+                          class="more-actions d-flex align-middle"
+                          href="javascripr:;"
+                          >Read Now <span class="ri-arrow-right-line"></span></a
+                        >
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nalink">
+          <a href="javascript:;" class="nav__link">Partners</a>
+        </li>
+        <li class="dropdown__item nalink">
+          <div class="nav__link dropdown__button">Resources</div>
+          <div class="dropdown__container megamenu">
+            <div class="dropdown__content container">
+              <div class="dropdown__group">
+                <div class="industry-innerclm">
+                  <div class="industry">
+                    <p class="title">Resources</p>
+                    <ul>
+                      <li><a href="javascript:;">Customer Stories</a></li>
+                      <li><a href="javascript:;">Videos</a></li>
+                      <li><a href="javascript:;">Free Tools</a></li>
+                      <li><a href="javascript:;">Blog</a></li>
+                      <li><a href="javascript:;">eBooks</a></li>
+                    </ul>
+                    <div class="more pt-4">
+                      <a
+                        class="more-actions d-flex align-middle"
+                        href="javascripr:;"
+                        >More Industries <span class="ri-arrow-right-line"
+                        ></span></a
+                      >
+                    </div>
+                  </div>
+                  <div class="industry">
+                    <p class="title">Documentation</p>
+                    <ul>
+                      <li><a href="javascript:;">Developer Portal</a></li>
+                      <li><a href="javascript:;">Academy</a></li>
+                    </ul>
+                  </div>
+                  <div class="industry">
+                    <p class="title">Support</p>
+                    <ul>
+                      <li><a href="javascript:;">Help Center</a></li>
+                      <li>
+                        <a href="javascript:;">Onboarding</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="platform sustomer-story">
+                  <p class="title">Featured Post</p>
+                  <figure>
+                    <Image src={dummy} alt="dummy" />
+                    <figcaption>
+                      <p class="story-title">
+                        Simplo Integrates Real-Time Visibility And Resource
+                        Tracking
+                      </p>
+                      <div class="more pt-4">
+                        <a
+                          class="more-actions d-flex align-middle"
+                          href="javascripr:;"
+                          >Read Now <span class="ri-arrow-right-line"></span></a
+                        >
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nalink">
+          <a href="javascript:;" class="nav__link">Product Capabilities</a>
+        </li>
+        <li class="dropdown__item nalink">
+          <div class="nav__link dropdown__button">Company</div>
+          <div class="dropdown__container megamenu">
+            <div class="dropdown__content container">
+              <div class="dropdown__group">
+                <div class="company_inner">
+                  <ul>
+                    <li><a href="javascript:;">Why Zuper</a></li>
+                    <li><a href="javascript:;">Press and Media</a></li>
+                    <li><a href="javascript:;">Contact Us</a></li>
+                    <li><a href="javascript:;">Careers</a></li>
+                    <li><a href="javascript:;">Partners</a></li>
+                    <li><a href="javascript:;">Find your Partners</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- <li class="header_btn hbtn1">
+          <a href="#" class="nav__link">Customer Login</a>
+        </li> -->
+        <li class="header_btn hbtn2">
+          <a href="#" class="nav__link">Get Free Demo Now</a>
+        </li>
+      </ul>
+      <div class="highlight"></div>
+      <div class="bg-overlay"></div>
+    </div>
+  </nav>
+</header>

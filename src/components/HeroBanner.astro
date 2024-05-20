@@ -1,0 +1,58 @@
+---
+import bannerimg from "../images/banner-img.png";
+import bestappstar from "../images/best-app-star.png";
+import topsoftstart from "../images/top-soft-start.png";
+import { Image } from "astro:assets";
+---
+
+<section class="HeroBanner bg-[#e6e6e65c]">
+  <div
+    class="grid max-w-screen-xl px-4 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12 container bb2 py-8 lg:pb-20"
+  >
+    <div class="mr-auto place-self-center lg:col-span-6 lg:pr-10">
+      <h1
+        class="max-w-2xl mb-4 font-black text-6xl ls-4 lg:text-6xl 2xl:text-8xl text-[#FD5000] leading-none"
+      >
+        <span class="text-[#12344D] font-black">Field Service</span><br /> Your Way
+      </h1>
+      <p
+        class="max-w-2xl mb-6 font-normal lg:mb-14 text-lg md:text-2xl text-[#12344D]"
+      >
+        Streamline your field processes and deliver the best service possible
+        with the most flexible and customizable field service management
+        software available today.
+      </p>
+      <a
+        href="javascript:;"
+        class="common_bt inline-block border justify-center md:justify-start bg-[#FD5000] text-white hover:bg-white hover:text-[#FD5000] hover:border-[#FD5000]"
+        title="Get a Free Demo">Get a Free Demo</a
+      >
+      <a
+        href="javascript:;"
+        class="common_bt inline-block bg-white justify-center md:justify-start text-[#FD5000] hover:bg-[#12344D] hover:text-white hover:border-[#12344D] md:ml-9 mt-4 md:mt-0"
+        title="Get a Free Demo">14-Day Free Trial</a
+      >
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full px-4">
+          <div
+            class="flex flex-wrap items-center justify-center md:justify-start py-5 gap-8"
+          >
+            <Image
+              class="flex w-[150px] items-center justify-center 2xl:w-[180px]"
+              src={bestappstar}
+              alt="bestappstar"
+            />
+            <Image
+              class="w-[150px] items-center justify-center 2xl:w-[180px]"
+              src={topsoftstart}
+              alt="topsoftstart"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hidden lg:mt-0 lg:col-span-6 lg:flex lg:justify-end">
+      <Image class="object-contain" src={bannerimg} alt="mockup" />
+    </div>
+  </div>
+</section>

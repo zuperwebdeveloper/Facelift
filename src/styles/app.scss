@@ -1,0 +1,24 @@
+// @charset "UTF-8";
+
+// 1. Configuration and helpers
+@import "01_abstracts/variables", "01_abstracts/functions",
+  "01_abstracts/mixins";
+
+// 2. Vendors
+@import "02_vendors/bootstrap", "02_vendors/normalize";
+
+// 3. Base stuff
+@import "03_base/base", "03_base/fonts", "03_base/helpers";
+
+// 4. Layout-related sections
+@import "04_layout/header", "04_layout/footer", "04_layout/section";
+
+// 5. Components
+@import "05_components/resources", "05_components/customerslider",
+  "05_components/Companies", "05_components/productmodule";
+
+// 6. Page-specific styles
+@import "06_pages/home", "06_pages/404";
+
+// 7. Themes
+@import "07_themes/default", "07_themes/responsivenav";

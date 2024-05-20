@@ -1,0 +1,181 @@
+---
+import business from "../images/top-business.png";
+import software from "../images/top-software.png";
+import skyline from "../images/skyline.png";
+import person_1 from "../images/person_1.png";
+import { Image } from "astro:assets";
+---
+
+<section class="bg-[#12344D] lg:pt-32 lg:pb-20 CustomerSlider">
+  <div class="container text-center m-auto">
+    <h4
+      class="leading-normal text-4xl md:text-5xl font-black text-white pb-6 md:pb-10 lg:pb-20 lg:max-w-[57%] m-auto"
+    >
+      Fast-Growing Service Organizations Love Zuper!
+    </h4>
+    <div class="badge">
+      <div class="badge-container">
+        <Image class="mx-auto" src={business} alt="business" />
+      </div>
+      <div class="badge-container">
+        <Image class="mx-auto" src={software} alt="software" />
+      </div>
+      <div class="badge-container">
+        <Image class="mx-auto" src={software} alt="software" />
+      </div>
+    </div>
+    <div class="flex flex-wrap mt-16 justify-center">
+      <div class="w-full sm:w-2/5 lg:w-[25%]">
+        <div class="text-left">
+          <div class="status">
+            <h6
+              class="text-[#FD5000] text-[32px] font-black ls-1 pb-2 border-l-4 border-white pl-9"
+            >
+              45K Users
+            </h6>
+            <p class="text-white text-[24px] font-normal pl-9 leading-normal">
+              Average time saved per team member a day
+            </p>
+          </div>
+          <div class="status pt-8">
+            <h6
+              class="text-[#FD5000] text-[32px] font-black ls-1 pb-2 border-l-4 border-white pl-9"
+            >
+              50 Hours
+            </h6>
+            <p class="text-white text-[24px] font-normal pl-9 leading-normal">
+              Average time saved per team member a day
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full sm:w-3/5 lg:w-[54%]">
+        <div
+          class="text-left slider-sec bg-white rounded-3xl w-full sm:w-3/5 md:max-w-[720px] md:w-full relative"
+        >
+          <div
+            class="swiper swiper-container testimonials px-8 py-8 md:py-8 md:px-20"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h6
+                  class="text-[#FD5000] text-[28px] font-bold ls-1 leading-normal"
+                >
+                  The natural choice given that it is so highly flexible and
+                  customizable
+                </h6>
+                <p class="text-[20px] font-normal pt-4 leading-normal">
+                  Zuper is easy! It was the natural choice given that it is so
+                  highly flexible and customizable and doesn't require heavy
+                  tech resources to set it up and manage it. This all leads to a
+                  quick ROI for my clients.
+                </p>
+                <div
+                  class="testimonials_slider flex flex-wrap justify-center gap-9 mt-16 relative"
+                >
+                  <div class="company_title">
+                    <h6
+                      class="text-[#39383C] text-[20px] font-bold leading-normal"
+                    >
+                      Francisco E. Figueroa
+                    </h6>
+                    <p
+                      class="text-[#39383C] text-[18px] font-normal pt-1 leading-normal"
+                    >
+                      Managing Partner
+                    </p>
+                  </div>
+                  <div class="testimonials_logo">
+                    <Image class="mx-auto" src={skyline} alt="skyline" />
+                  </div>
+                  <Image
+                    class="absolute left-[-84px] bottom-[-33px]"
+                    src={person_1}
+                    alt="person_1"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <h6
+                  class="text-[#FD5000] text-[28px] font-bold ls-1 leading-normal"
+                >
+                  The natural choice given that it is so highly flexible and
+                  customizable
+                </h6>
+                <p class="text-[20px] font-normal pt-4 leading-normal">
+                  Zuper is easy! It was the natural choice given that it is so
+                  highly flexible and customizable and doesn't require heavy
+                  tech resources to set it up and manage it. This all leads to a
+                  quick ROI for my clients.
+                </p>
+                <div
+                  class="testimonials_slider flex flex-wrap justify-center gap-9 mt-16 relative"
+                >
+                  <div class="company_title">
+                    <h6
+                      class="text-[#39383C] text-[20px] font-bold leading-normal"
+                    >
+                      Francisco E. Figueroa
+                    </h6>
+                    <p
+                      class="text-[#39383C] text-[18px] font-normal pt-1 leading-normal"
+                    >
+                      Managing Partner
+                    </p>
+                  </div>
+                  <div class="testimonials_logo">
+                    <Image class="mx-auto" src={skyline} alt="skyline" />
+                  </div>
+                  <Image
+                    class="absolute left-[-84px] bottom-[-33px]"
+                    src={person_1}
+                    alt="person_1"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <h6
+                  class="text-[#FD5000] text-[28px] font-bold ls-1 leading-normal"
+                >
+                  The natural choice given that it is so highly flexible and
+                  customizable
+                </h6>
+                <p class="text-[20px] font-normal pt-4 leading-normal">
+                  Zuper is easy! It was the natural choice given that it is so
+                  highly flexible and customizable and doesn't require heavy
+                  tech resources to set it up and manage it. This all leads to a
+                  quick ROI for my clients.
+                </p>
+                <div
+                  class="testimonials_slider flex flex-wrap justify-center gap-9 mt-16 relative"
+                >
+                  <div class="company_title">
+                    <h6
+                      class="text-[#39383C] text-[20px] font-bold leading-normal"
+                    >
+                      Francisco E. Figueroa
+                    </h6>
+                    <p
+                      class="text-[#39383C] text-[18px] font-normal pt-1 leading-normal"
+                    >
+                      Managing Partner
+                    </p>
+                  </div>
+                  <div class="testimonials_logo">
+                    <Image class="mx-auto" src={skyline} alt="skyline" />
+                  </div>
+                  <Image
+                    class="absolute left-[-84px] bottom-[-33px]"
+                    src={person_1}
+                    alt="person_1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+---
+import fieldnation from "../images/fieldnation.png";
+import zendesk from "../images/zendesk.png";
+import zoho from "../images/zoho.png";
+import hubspot from "../images/hubspot.png";
+import { Image } from "astro:assets";
+---
+
+<section class="Integration_Partners">
+  <div class="container">
+    <div class="text-center">
+      <h4 class="text-4xl md:text-5xl font-black pb-6 text-[#12344D]">
+        Our Amazing Integration Partners
+      </h4>
+      <div
+        class="w-full sm:w-full md:w-full lg:w-9/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center items-center mx-auto pt-8 pb-12"
+      >
+        <Image class="mx-auto" src={hubspot} alt="hubspot" />
+        <Image class="mx-auto" src={zoho} alt="zoho" />
+        <Image class="mx-auto" src={zendesk} alt="zendesk" />
+        <Image class="mx-auto" src={fieldnation} alt="fieldnation" />
+      </div>
+      <a
+        href="javascript:;"
+        class="common_bt inline-block border border-solid border-[#12344D] rounded-[10px] text-[#000] hover:bg-[#12344D] hover:text-[#FFF]"
+        title="View all app integrations">View all app integrations</a
+      >
+    </div>
+  </div>
+</section>

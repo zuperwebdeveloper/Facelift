@@ -1,0 +1,42 @@
+.Productmodule {
+  .tabs {
+    svg {
+      opacity: 0.3;
+      transition: 0.5s;
+    }
+    position: relative;
+    &:after {
+      content: "";
+      width: 0;
+      height: 0.365vw;
+      background-color: #fd5000;
+      left: 0;
+      position: absolute;
+      z-index: 9;
+      bottom: -4px;
+      border-radius: 5px;
+    }
+    &:hover,
+    &.active {
+      &:after {
+        width: 50%;
+        transition: 0.5s;
+      }
+      svg {
+        opacity: 1;
+      }
+    }
+  }
+  .tab-content {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeIn 0.5s ease 1 forwards;
+  }
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
