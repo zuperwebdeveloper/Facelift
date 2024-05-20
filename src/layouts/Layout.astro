@@ -4,7 +4,6 @@ export interface Props {
 }
 const { title } = Astro.props;
 import "../styles/app.scss";
-import "swiper/swiper-bundle.min.css";
 ---
 
 <!doctype html>
@@ -45,6 +44,11 @@ import "swiper/swiper-bundle.min.css";
     <script
       src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/countup.min.js"
     ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"
@@ -57,7 +61,8 @@ import "swiper/swiper-bundle.min.css";
       <div class="cursorcircle cursorcircle--small"></div>
       <div class="card_cursor"></div>
     </div>
-    <script>
+
+    <script defer hoist>
       import "../js/main";
     </script>
     <script
