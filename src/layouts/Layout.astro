@@ -4,6 +4,7 @@ export interface Props {
 }
 const { title } = Astro.props;
 import "../styles/app.scss";
+import "swiper/swiper-bundle.min.css";
 ---
 
 <!doctype html>
@@ -58,7 +59,7 @@ import "../styles/app.scss";
     </div>
 
     <script is:inline>
-      import "../js/main";
+      import "../js/main"; // Ensure this path is correct relative to this file
     </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"
