@@ -1,5 +1,7 @@
 // Imports
 import { defineConfig } from 'astro/config';
+import serviceWorker from "astrojs-service-worker";
+import compress from "astro-compress";
 import react from '@astrojs/react'; //React
 import sitemap from "@astrojs/sitemap"; // For sitemap in live site
 
@@ -9,7 +11,14 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   //site: '', Published homepage link goes here for sitemap
   integrations: [react() // sitemap({customPages: [''] Subpages links goes here for sitemap. }),
-  , tailwind()],
+    , tailwind(), serviceWorker(), compress({
+      css: false,
+      html: true,
+      js: false,
+      img: true,
+      svg: true
+    }),
+  ],
   //For custom build
   vite: {
     build: {
