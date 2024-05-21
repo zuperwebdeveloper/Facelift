@@ -142,8 +142,10 @@ var swiper = new Swiper(".testimonials", {
   centeredSlides: true,
   slidesPerView: 1,
   loop: true,
+  effect: "fade",
+  crossFade: 'true',
   autoplay: {
-    delay: 3000,
+    delay: 5000,
     disableOnInteraction: false,
   },
   pagination: {
