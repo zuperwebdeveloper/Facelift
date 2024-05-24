@@ -10,8 +10,6 @@ import ZuperStatistics from "../components/ZuperStatistics.astro";
 import Companies from "../components/Companies.astro";
 import ProductModule from "../components/ProductModule.astro";
 import CustomerSlider from "../components/CustomerSlider.astro";
-import Slidertest from "../components/Slidertest.astro";
-import DummyHeader from "../components/DummyHeader.astro";
 ---
 
 <Layout title="Home">
@@ -27,4 +25,10 @@ import DummyHeader from "../components/DummyHeader.astro";
     <Resources />
   </main>
   <Footer />
+  <script>
+    import "../js/main";
+  </script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"
+  ></script>
 </Layout>
