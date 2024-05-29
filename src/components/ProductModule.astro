@@ -138,7 +138,7 @@ import { Image } from "astro:assets";
           class="transition-all duration-300 rounded-lg shadow-md tab-content active"
           id="bb_0"
         >
-          <div class="row">
+          <div class="row text-up js-scroll">
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
               <div class="tut_leftbox">
                 <p class="text-4xl text-white font-bold md:w-9/12">
@@ -166,10 +166,14 @@ import { Image } from "astro:assets";
               </div>
             </div>
           </div>
-          <h4 class="pt-8 text-3xl text-white pb-4">
+          <h4 class="text-up js-scroll pt-8 text-3xl text-white pb-4">
             Add a widget to start customizing your dashboard
           </h4>
-          <Image class="" src={productdashboard} alt="productdashboard" />
+          <Image
+            class="text-up js-scroll"
+            src={productdashboard}
+            alt="productdashboard"
+          />
         </div>
         <div
           x-show="openTab === 2"

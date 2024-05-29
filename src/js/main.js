@@ -1,5 +1,37 @@
-
-
+//scroll animation
+var elements = document.getElementsByClassName("js-scroll");
+document.addEventListener("scroll", scrollAnimate);
+function inView(item) {
+  var elementHeight = item.clientHeight;
+  var windowHeight = window.innerHeight;
+  var scrollY = window.scrollY || window.pageYOffset;
+  var scrollPosition = scrollY + windowHeight;
+  var elementPosition =
+    item.getBoundingClientRect().top + scrollY + elementHeight / 2;
+  if (
+    scrollPosition > elementPosition &&
+    scrollPosition < elementPosition + windowHeight
+  ) {
+    return true;
+  }
+  return false;
+}
+function scrollAnimate() {
+  Array.prototype.forEach.call(elements, function (element) {
+    if (element.classList.contains("js-scroll")) {
+      if (inView(element)) {
+        element.classList.add("viewed");
+        element.classList.add("inview");
+      } else {
+        element.classList.remove("inview");
+        if (element.classList.contains("viewed")) {
+          element.classList.add("viewed--out");
+        }
+      }
+    }
+  });
+}
+//scroll animation end
 
 /*=============== SHOW MENU ===============*/
 const showMenu = (toggleId, navId) => {

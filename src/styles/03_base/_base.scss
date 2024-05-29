@@ -549,3 +549,149 @@ section {
 .swiper-pagination-bullet-active {
   background-color: #9a9b9c;
 }
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+  text-align: center;
+}
+
+// animations all case study pages
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.js-scroll.viewed {
+  opacity: 1;
+}
+
+@keyframes imgScroll {
+  0% {
+    bottom: -410px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes imgScrollMobile {
+  0% {
+    bottom: -100px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+//slide animation
+.slide-left.viewed {
+  animation: slide-in-left 1s ease-in-out both;
+}
+.slide-right.viewed {
+  animation: slide-in-right 1s ease-in-out both;
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+// text animation
+.text-down-anim {
+  animation: text-downAnim 1s ease-in both;
+}
+.text-up-anim {
+  animation: text-upAnim 1s ease-in both;
+}
+@keyframes text-downAnim {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes text-upAnim {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.text-up.viewed {
+  animation: text-up 1s ease both;
+}
+.text-down.viewed {
+  animation: text-down 1s ease both;
+}
+@keyframes text-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes text-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+fade-in animation .fade-in-anim.viewed {
+  animation: fade-in 0.5s ease-in both;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+//slide-in animation
+.slide-in.viewed {
+  animation: slide-in 0.5s ease-in both;
+}
+@keyframes slide-in {
+  0% {
+    opacity: 0.8;
+    transform: translateX(-5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
