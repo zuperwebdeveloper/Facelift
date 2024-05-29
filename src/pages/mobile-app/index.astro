@@ -1,0 +1,54 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../layouts/Header.astro";
+import Footer from "../../layouts/Footer.astro";
+import Resources from "../../components/Resources.astro";
+import ElevateBar from "../../components/ElevateBar.astro";
+import IntegrationPartners from "../../components/IntegrationPartners.astro";
+import InnerBanner from "../../images/inner-page-banner.svg";
+---
+
+<Layout title="MobileApp">
+  <div class="header_parent"><Header /></div>
+  <main class="servicespage">
+    <section class="innerbanner innerBackground">
+      <div class="container">
+        <div class="innerbanner__content">
+          <h1 class="slide-left">Services</h1>
+        </div>
+      </div>
+      <div class="banner_arrow_red">
+        <svg
+          width="420.935685px"
+          height="456px"
+          viewBox="0 0 420.935685 456"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <g
+            id="WIP-Interim-website"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <g
+              id="Group-7"
+              transform="translate(-1589.844771, -86.024602)"
+              fill="#B2142D"
+            >
+              <path
+                d="M1794.89765,284.653091 L2010.78046,185.112973 L2010.78046,86.0246016 L1617.53323,282.646218 C1598.92767,291.929006 1589.84477,302.802901 1589.84477,314.024602 C1589.84477,325.242304 1598.92767,336.136188 1617.53323,345.414979 L2010.78046,542.024602 L2010.78046,442.93623 L1794.89765,343.376124 C1776.71586,335.044801 1767.79287,324.706605 1767.79287,314.024602 C1767.79287,303.390572 1776.71586,293.020393 1794.89765,284.653091"
+                id="Fill-306"></path>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </section>
+    <IntegrationPartners />
+    <ElevateBar />
+    <Resources />
+  </main>
+  <Footer />
+</Layout>
