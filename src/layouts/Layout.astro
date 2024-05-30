@@ -2,6 +2,7 @@
 export interface Props {
   title: string;
 }
+import { ViewTransitions } from "astro:transitions";
 const { title } = Astro.props;
 import "../styles/app.scss";
 ---
@@ -21,6 +22,7 @@ import "../styles/app.scss";
       name="description"
       content="The best field service management software for businesses of any size. Simplify & streamline work orders, estimates, invoices, scheduling, timesheets & more."
     />
+
     <script
       defer
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -36,6 +38,13 @@ import "../styles/app.scss";
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -50,6 +59,14 @@ import "../styles/app.scss";
     <script
       src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"
       defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="showContent"><slot /></div>
@@ -59,7 +76,7 @@ import "../styles/app.scss";
       <div class="cursorcircle cursorcircle--small"></div>
       <div class="card_cursor"></div>
     </div>
-    <script defer hoist>
+    <script>
       import "../js/main";
     </script>
   </body>

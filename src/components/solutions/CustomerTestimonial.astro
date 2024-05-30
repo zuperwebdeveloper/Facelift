@@ -1,0 +1,94 @@
+---
+import { Image } from "astro:assets";
+import CustomerTestimonial_1 from "../../images/solution/CustomerTestimonial_1.jpg";
+import play from "../../images/solution/play.svg";
+---
+
+<section class="py-[40px] md:py-[110px] bg-[#12344D]">
+  <div class="container">
+    <div class="flex w-full flex-col-reverse gap-12 md:flex-row">
+      <div class="w-full md:w-2/4">
+        <div class="video">
+          <Image
+            src={CustomerTestimonial_1}
+            class="w-full md:max-w-[500px] video_thumb"
+            alt="CustomerTestimonial_1"
+          />
+          <a
+            class="popup-youtube play_button"
+            href="https://www.youtube.com/watch?v=bipr9M6lDk4"
+            ><Image src={play} alt="Play" /></a
+          >
+        </div>
+      </div>
+      <div class="w-full md:w-2/4">
+        <h4
+          class="font-Jakarta text-white text-[24px] lg:text-[32px] font-extrabold"
+        >
+          “By using a technology like Zuper, we're able to efficiently pass
+          information between the office, the team and the customer.”
+        </h4>
+        <p
+          class="pt-6 font-Jakarta text-white text-[18px] lg:text-[26px] font-semibold"
+        >
+          Isaac Laronge, CEO - Skyline Cleaning
+        </p>
+        <div class="pt-[40px] grid grid-cols-2 gap-4">
+          <div class="customer_static">
+            <span
+              class="font-Jakarta text-[#F1663B] text-[35px] lg:text-[70px] font-extrabold"
+              >53%</span
+            ><br /><span
+              class="font-Jakarta text-white text-[18px] lg:text-[24px] font-semibold pt-3 block"
+              >More job completion</span
+            >
+          </div>
+          <div class="customer_static">
+            <span
+              class="font-Jakarta text-[#F1663B] text-[35px] lg:text-[70px] font-extrabold"
+              >30%</span
+            ><br /><span
+              class="font-Jakarta text-white text-[18px] lg:text-[24px] font-semibold pt-3 block"
+              >More job completion</span
+            >
+          </div>
+        </div>
+        <a
+          title="Watch Video"
+          href="https://www.youtube.com/watch?v=bipr9M6lDk4"
+          class="popup-youtube flex bg-white hover:bg-transparent border-[1px] border-[#fff] rounded-lg w-max py-[12px] px-[20px] mt-[40px] lg:mt-[70px] text-[#12344D] hover:text-[#F1663B] font-Inter text-[18px] font-semibold gap-4 items-center transition ease-in-out delay-150"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="29"
+            viewBox="0 0 25 29"
+            fill="none"
+          >
+            <ellipse
+              cx="12.5"
+              cy="14.2963"
+              rx="12.5"
+              ry="13.8797"
+              fill="#F1663B"></ellipse>
+            <path
+              d="M18.6021 13.2193C19.2158 13.6127 19.2158 14.5095 18.6021 14.903L10.0143 20.4084C9.34873 20.8351 8.4746 20.3572 8.47461 19.5666L8.47461 8.55571C8.47461 7.76511 9.34873 7.28717 10.0143 7.71385L18.6021 13.2193Z"
+              fill="#FFF4F4"></path>
+          </svg>Watch Video</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $(function () {
+    $(".popup-youtube, .popup-vimeo").magnificPopup({
+      disableOn: 700,
+      type: "iframe",
+      mainClass: "mfp-fade",
+      removalDelay: 160,
+      preloader: true,
+      fixedContentPos: false,
+    });
+  });
+</script>
