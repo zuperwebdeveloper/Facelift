@@ -1,0 +1,105 @@
+---
+import { Image } from "astro:assets";
+import mobile_app_page1 from "../../images/solution/mobile_app_page_1.png";
+import mobile_app_page2 from "../../images/solution/mobile_app_page_2.png";
+import mobile_app_page3 from "../../images/solution/mobile_app_page_3.png";
+---
+
+<section class="py-12 md:pt-28 md:pb-28">
+  <div class="container">
+    <div class="flex flex-col gap-16 md:flex-row items-centerl">
+      <div class="w-full md:w-1/2">
+        <h2
+          class="text-up js-scroll text-2xl lg:text-[42px] leading-[30px] lg:leading-[48px] text-left text-black font-extrabold"
+        >
+          Provide Users With An Intuitive And User-Friendly Experience
+        </h2>
+        <p
+          class="text-up js-scroll mt-7 md:mt-9 lg:pr-[27%] text-[#282828] text-[20px] leading-[26px] font-sans font-[400]"
+        >
+          Zuper's field service app for iOS and Android provides an
+          easy-to-navigate interface and gives your field teams the freedom to
+          manage field sales and service in the most hassle-free manner.
+        </p>
+        <hr
+          class="text-up js-scroll h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"
+        />
+        <ul class="text-up js-scroll fa-ul" style="margin-left:20px;">
+          <li class="mb-4 text-[#282828] text-[18px] font-sans font-[400]">
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Jobs pending, in-progress, and completed or find anything using
+            global search for effective job management
+          </li>
+          <li
+            class="mb-4 text-[#282828] text-[18px] leading-[24px] font-sans font-[400]"
+          >
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Punch in, punch out, update timesheets or manage their time-off
+            using their mobile app
+          </li>
+          <li
+            class="text-[#282828] text-[18px] leading-[24px] font-sans font-[400]"
+          >
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Stay in touch with your team with the chat feature and real-time
+            job status updates and send automated notifications for any job
+          </li>
+        </ul>
+      </div>
+      <div
+        class="text-up js-scroll w-full md:w-1/2 flex md:justify-center lg:justify-end"
+      >
+        <Image
+          src={mobile_app_page3}
+          class="align-middle object-contain"
+          alt="Blog Image"
+        />
+      </div>
+    </div>
+    <!-- next left img right content -->
+    <div
+      class="pt-28 flex flex-col-reverse gap-16 md:flex-row items-centerl gap-x-5 md:gap-y-5"
+    >
+      <div
+        class="text-up js-scroll w-full md:w-1/2 flex md:justify-center lg:justify-start"
+      >
+        <Image
+          src={mobile_app_page2}
+          class="align-middle object-contain"
+          alt="Blog Image"
+        />
+      </div>
+      <div class="w-full md:w-1/2">
+        <h2
+          class="text-up js-scroll text-2xl lg:text-[42px] leading-[30px] lg:leading-[48px] text-left text-black font-extrabold"
+        >
+          Increase satisfaction with real-time communication
+        </h2>
+        <p
+          class="text-up js-scroll mt-7 md:mt-9 lg:pr-[27%] text-[#282828] text-[20px] leading-[26px] font-sans font-[400]"
+        >
+          Zuper's field service app for iOS and Android provides an
+          easy-to-navigate interface and gives your field teams the freedom to
+          manage field sales and service in the most hassle-free manner.
+        </p>
+        <hr
+          class="text-up js-scroll h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"
+        />
+        <ul class="text-up js-scroll fa-ul" style="margin-left:20px;">
+          <li class="mb-4 text-[#282828] text-[18px] font-sans font-[400]">
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Jobs pending, in-progress, and completed or find anything using
+            global search for effective job management
+          </li>
+          <li
+            class="mb-4 text-[#282828] text-[18px] leading-[24px] font-sans font-[400]"
+          >
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Punch in, punch out, update timesheets or manage their time-off
+            using their mobile app
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

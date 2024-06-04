@@ -5,8 +5,10 @@ import Footer from "../../layouts/Footer.astro";
 import Resources from "../../components/Resources.astro";
 import ElevateBar from "../../components/ElevateBar.astro";
 import IntegrationPartners from "../../components/IntegrationPartners.astro";
-import LftcontentRytimg from "../../components/solutions/LftcontentRytimg.astro";
+import ListSection from "../../components/solutions/ListSection.astro";
+import ListSection2 from "../../components/solutions/ListSection2.astro";
 import CustomerTestimonial from "../../components/solutions/CustomerTestimonial.astro";
+import InnerHero from "../../components/solutions/InnerHero.astro";
 import InteractionSection from "../../components/solutions/InteractionSection.astro";
 import InnerBanner from "../../images/inner-page-banner.svg";
 ---
@@ -14,9 +16,11 @@ import InnerBanner from "../../images/inner-page-banner.svg";
 <Layout title="MobileApp">
   <Header />
   <main class="servicespage">
+    <InnerHero />
     <!-- <InteractionSection /> -->
-    <LftcontentRytimg />
+    <ListSection />
     <CustomerTestimonial />
+    <ListSection2 />
     <IntegrationPartners />
     <ElevateBar />
     <Resources />
