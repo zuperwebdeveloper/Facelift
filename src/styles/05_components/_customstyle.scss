@@ -67,3 +67,102 @@
   color: #fff;
   cursor: pointer;
 }
+.intraction_container {
+  .intraction_li {
+    a {
+      transition: all 0.2s ease-in;
+    }
+    .active {
+      a {
+        background: #ffebdb;
+        color: #f1663b;
+        font-weight: 600;
+        border: 1px solid #f1663b;
+      }
+    }
+  }
+}
+
+.tab-container {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
+
+.tab-buttons {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+}
+
+.tab-button {
+  padding: 20px 0 20px 30px;
+  cursor: pointer;
+  border-bottom: 1px solid #12344d80;
+  outline: none;
+  text-align: left;
+  transition: background-color 0.3s;
+  position: relative;
+  color: #c7c7c7;
+  font-size: 24px;
+  font-weight: 500;
+  &.active {
+    color: #000;
+    background: #ffebdb;
+    border-top: 3px solid #fd5000;
+    border-bottom: 1px solid #fd5000;
+    .short_note {
+      display: block;
+      opacity: 1;
+    }
+    &:first-child {
+      border-top: 0;
+    }
+  }
+}
+
+.tab-pane {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.tab-pane.active {
+  display: block;
+  opacity: 1;
+}
+.animation_element {
+  width: 558px;
+}
+
+.timer-bar {
+  height: 3px;
+  background-color: #fd5000;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+ul.features_list {
+  @media (min-width: 991px) {
+    max-height: 420px;
+    overflow-y: scroll;
+  }
+}
+.short_note {
+  display: none;
+  opacity: 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 18px;
+  transition: all ease-in 0.5s;
+  transition-delay: 0.8s;
+}

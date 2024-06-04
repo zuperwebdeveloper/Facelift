@@ -6,8 +6,15 @@ export default {
 			'Jakarta': ['Plus Jakarta Sans'],
 			'Inter': ['Inter']
 		},
-		extend: {},
+		extend: {
+			width: {
+				'3/10': '30%',
+				'7/10': '70%',
+			}
+		},
 
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/forms'),
+	],
 }

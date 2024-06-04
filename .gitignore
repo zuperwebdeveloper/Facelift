@@ -6,6 +6,7 @@
 # Node artifact files
 node_modules/
 dist/
+src/images/solution/tab_intraction_img.svg
 
 # Compiled Java class files
 *.class

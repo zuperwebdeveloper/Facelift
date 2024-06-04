@@ -184,3 +184,127 @@ var swiper = new Swiper(".testimonials", {
   },
 
 });
+
+
+// vertical tab script Start
+// document.addEventListener('DOMContentLoaded', function () {
+//   const tabs = document.querySelectorAll('.tab-button');
+//   const tabPanes = document.querySelectorAll('.tab-pane');
+//   let currentTab = 0;
+//   let autoplayInterval;
+//   const autoplayDuration = 5000; // 5 seconds for each tab
+//   let timerBar;
+
+//   function showTab(index) {
+//     tabPanes.forEach((pane, i) => {
+//       if (i === index) {
+//         pane.classList.add('active');
+//       } else {
+//         pane.classList.remove('active');
+//       }
+//     });
+//     resetTimerBar(index);
+//   }
+
+//   function startAutoplay() {
+//     autoplayInterval = setInterval(() => {
+//       currentTab = (currentTab + 1) % tabs.length;
+//       showTab(currentTab);
+//     }, autoplayDuration);
+//   }
+
+//   function resetTimerBar(index) {
+//     if (timerBar) {
+//       timerBar.remove();
+//     }
+//     const activeTab = tabs[index];
+//     timerBar = document.createElement('div');
+//     timerBar.classList.add('timer-bar');
+//     activeTab.appendChild(timerBar);
+
+//     timerBar.style.transition = 'none';
+//     timerBar.style.width = '0';
+//     setTimeout(() => {
+//       timerBar.style.transition = `width ${autoplayDuration}ms linear`;
+//       timerBar.style.width = '100%';
+//     }, 50); // Slight delay to allow transition to reset
+//   }
+
+//   tabs.forEach((tab, index) => {
+//     tab.addEventListener('click', () => {
+//       clearInterval(autoplayInterval);
+//       currentTab = index;
+//       showTab(currentTab);
+//       startAutoplay(); // Restart autoplay after manual selection
+//     });
+//   });
+
+//   // Initialize the first tab and start autoplay
+//   showTab(currentTab);
+//   startAutoplay();
+// });
+document.addEventListener('DOMContentLoaded', function () {
+  const tabs = document.querySelectorAll('.tab-button');
+  const tabPanes = document.querySelectorAll('.tab-pane');
+  let currentTab = 0;
+  let autoplayInterval;
+  const autoplayDuration = 5000; // 5 seconds for each tab
+  let timerBar;
+
+  function showTab(index) {
+    tabPanes.forEach((pane, i) => {
+      if (i === index) {
+        pane.classList.add('active');
+      } else {
+        pane.classList.remove('active');
+      }
+    });
+    tabs.forEach((tab, i) => {
+      if (i === index) {
+        tab.classList.add('active');
+      } else {
+        tab.classList.remove('active');
+      }
+    });
+    resetTimerBar(index);
+  }
+
+  function startAutoplay() {
+    autoplayInterval = setInterval(() => {
+      currentTab = (currentTab + 1) % tabs.length;
+      showTab(currentTab);
+    }, autoplayDuration);
+  }
+
+  function resetTimerBar(index) {
+    if (timerBar) {
+      timerBar.remove();
+    }
+    const activeTab = tabs[index];
+    timerBar = document.createElement('div');
+    timerBar.classList.add('timer-bar');
+    activeTab.appendChild(timerBar);
+
+    timerBar.style.transition = 'none';
+    timerBar.style.width = '0';
+    setTimeout(() => {
+      timerBar.style.transition = `width ${autoplayDuration}ms linear`;
+      timerBar.style.width = '100%';
+    }, 50); // Slight delay to allow transition to reset
+  }
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+      clearInterval(autoplayInterval);
+      currentTab = index;
+      showTab(currentTab);
+      startAutoplay(); // Restart autoplay after manual selection
+    });
+  });
+
+  // Initialize the first tab and start autoplay
+  showTab(currentTab);
+  startAutoplay();
+});
+
+// vertical tab script End

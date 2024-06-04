@@ -1,0 +1,139 @@
+---
+import { Image } from "astro:assets";
+import tab_intraction_img from "../../images/solution/tab_intraction_img.png";
+import mobileApplication from "../../images/solution/mobile-application.webp";
+---
+
+<section class="">
+  <div class="container">
+    <div class="inner_wrapper">
+      <h2
+        class="font-Jakarta text-up js-scroll text-center text-2xl lg:text-[42px] leading-[30px] lg:leading-[48px] text-black font-extrabold"
+      >
+        One app, for all your team work
+      </h2>
+      <p
+        class="text-center text-up js-scroll mt-7 md:mt-9 text-[#282828] text-[20px] leading-[26px] font-sans font-[400] mx-auto lg:w-3/4 pb-[40px]"
+      >
+        Zuper Mobile App offers complete visibility of job details, customer
+        preferences, and accounting processes and works even when there is no
+        internet connectivity.
+      </p>
+      <div
+        x-data="{ openTab: 1 }"
+        class="text-up js-scroll intraction_container"
+      >
+        <ul
+          class="flex flex-wrap text-sm font-medium text-center gap-5 lg:gap-8 justify-center pb-20 intraction_li"
+        >
+          <li class="me-1 tabs active" data-tab="bb_0" x-on:click="openTab = 1">
+            <a
+              href="javascript:;"
+              aria-current="page"
+              class="inline-block text-black text-[18px] md:text-[24px] px-[20px] py-[8px] md:px-[40px] md:py-[10px] border-[1px] border-black rounded-[100px]"
+              >Efficiency</a
+            >
+          </li>
+          <li class="me-1 tabs" data-tab="bb_1" x-on:click="openTab = 2">
+            <a
+              href="javascript:;"
+              class="inline-block text-black text-[18px] md:text-[24px] px-[20px] py-[8px] md:px-[40px] md:py-[10px] border-[1px] border-black rounded-[100px]"
+              >Productivity</a
+            >
+          </li>
+          <li class="tabs" data-tab="bb_2" x-on:click="openTab = 3">
+            <a
+              href="javascript:;"
+              class="inline-block text-black text-[18px] md:text-[24px] px-[20px] py-[8px] md:px-[40px] md:py-[10px] border-[1px] border-black rounded-[100px]"
+              >Communication</a
+            >
+          </li>
+          <li class="tabs" data-tab="bb_2" x-on:click="openTab = 4">
+            <a
+              href="javascript:;"
+              class="inline-block text-black text-[18px] md:text-[24px] px-[20px] py-[8px] md:px-[40px] md:py-[10px] border-[1px] border-black rounded-[100px]"
+              >Customer Experince</a
+            >
+          </li>
+        </ul>
+        <div class="content">
+          <div
+            x-show="openTab === 1"
+            class="transition-all duration-300 tab-content active"
+            id="bb_0"
+          >
+            <div class="tab_innercontent">
+              <div class="flex flex-col md:flex-row w-full">
+                <div class="tab-container w-full">
+                  <div class="tab-buttons w-full md:w-3/10">
+                    <h3
+                      class="font-Jakarta text-up js-scroll text-left text-2xl lg:text-[36px] leading-[30px] lg:leading-[46px] text-black font-extrabold pb-6 md:pb-10 md:w-[74%]"
+                    >
+                      Keep everyone in the loop.
+                    </h3>
+                    <ul class="features_list">
+                      <li class="tab-button" data-tab="1">Status Updates
+                        <span class="short_note">Zuper Mobile App offers complete visibility of job details, customer preferences, and accounting processes and works.</span></li>
+                      <li class="tab-button" data-tab="2">
+                        Notifications & Alerts
+                        <span class="short_note">Zuper Mobile App offers complete visibility of job details, customer preferences, and accounting processes and works.</span>
+                      </li>
+                      <li class="tab-button" data-tab="3">Notes & Media
+                        <span class="short_note">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                      </li>
+                      <li class="tab-button" data-tab="4">
+                        Job Level Activity
+                        <span class="short_note">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                      </li>
+                      <li class="tab-button" data-tab="5">
+                        Route Notifications
+                        <span class="short_note">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                      </li>
+                      <li class="tab-button" data-tab="6">jobs<span class="short_note">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></li>
+                      <li class="tab-button" data-tab="7">Loop<span class="short_note">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></li>
+                    </ul>
+                  </div>
+                  <div
+                    class="tab-content w-full md:w-7/10 bg-[#FFEBDB;] md:p-[70px]"
+                  >
+                    <div class="tab-pane" data-tab="1">
+                       
+                        <Image class="object-contain mx-auto animation_element" src={tab_intraction_img} alt="Intraction"/>
+                    </div>
+                    <div class="tab-pane" data-tab="2"><Image class="object-contain mx-auto animation_element" src={mobileApplication} alt="Intraction"/></div>
+                    <div class="tab-pane" data-tab="3"><Image class="object-contain mx-auto animation_element" src={tab_intraction_img} alt="Intraction"/></div>
+                    <div class="tab-pane" data-tab="4"><Image class="object-contain mx-auto animation_element" src={mobileApplication} alt="Intraction"/></div>
+                    <div class="tab-pane" data-tab="5"><Image class="object-contain mx-auto animation_element" src={tab_intraction_img} alt="Intraction"/></div>
+                    <div class="tab-pane" data-tab="6"><Image class="object-contain mx-auto animation_element" src={mobileApplication} alt="Intraction"/></div>
+                    <div class="tab-pane" data-tab="7"><Image class="object-contain mx-auto animation_element" src={mobileApplication} alt="Intraction"/></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              x-show="openTab === 2"
+              class="transition-all duration-300 rounded-lg shadow-md tab-content"
+              id="bb_1"
+            >
+              <h4 class="pt-8 text-3xl text-white pb-4">two</h4>
+            </div>
+            <div
+              x-show="openTab === 3"
+              class="transition-all duration-300 rounded-lg shadow-md tab-content"
+              id="bb_2"
+            >
+              <h4 class="pt-8 text-3xl text-white pb-4">three</h4>
+            </div>
+            <div
+              x-show="openTab === 4"
+              class="transition-all duration-300 rounded-lg shadow-md tab-content"
+              id="bb_2"
+            >
+              <h4 class="pt-8 text-3xl text-white pb-4">four</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
