@@ -1,0 +1,113 @@
+---
+import { Image } from "astro:assets";
+import mobile_app_page1 from "../../images/solution/mobile_app_page_1.png";
+import mobile_app_page2 from "../../images/solution/mobile_app_page_2.png";
+---
+
+<section class="py-12 md:pt-28 md:pb-28">
+  <div class="container">
+    <div class="flex flex-col gap-16 md:flex-row items-centerl">
+      <div class="w-full md:w-1/2">
+        <h2
+          class="text-up js-scroll text-2xl lg:text-[42px] leading-[30px] lg:leading-[48px] text-left text-black font-extrabold"
+        >
+          Easily Assign And Prioritize Your Work Orders
+        </h2>
+        <p
+          class="text-up js-scroll mt-7 md:mt-9 text-[#282828] text-[20px] leading-[26px] font-sans font-[400]"
+        >
+          Are you tired of work orders getting lost in the paperwork? Do not
+          allow misplaced work orders to impact your bottom line and affect your
+          field service team's reputation any longer with efficient work order
+          management system.
+        </p>
+        <hr
+          class="text-up js-scroll h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"
+        />
+        <ul class="text-up js-scroll fa-ul" style="margin-left:20px;">
+          <li class="mb-4 text-[#282828] text-[18px] font-sans font-[400]">
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Set up custom filters and assign tasks by technician, location, due
+            date, status, and priority level with complete audit trails
+          </li>
+          <li
+            class="mb-4 text-[#282828] text-[18px] leading-[24px] font-sans font-[400]"
+          >
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Include photos, videos, or files and communicate with built-in chat
+            and commenting features
+          </li>
+          <li
+            class="text-[#282828] text-[18px] leading-[24px] font-sans font-[400]"
+          >
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Cut down on admin tasks and emails with customized forms that
+            auto-assign tasks
+          </li>
+        </ul>
+      </div>
+      <div
+        class="text-up js-scroll w-full md:w-1/2 flex md:justify-center lg:justify-end"
+      >
+        <Image
+          src={mobile_app_page1}
+          class="align-middle object-contain"
+          alt="Blog Image"
+        />
+      </div>
+    </div>
+    <!-- next left img right content -->
+    <div
+      class="pt-28 flex flex-col-reverse gap-16 md:flex-row items-centerl gap-x-5 md:gap-y-5"
+    >
+      <div
+        class="text-up js-scroll w-full md:w-1/2 flex md:justify-center lg:justify-start"
+      >
+        <Image
+          src={mobile_app_page2}
+          class="align-middle object-contain"
+          alt="Blog Image"
+        />
+      </div>
+      <div class="w-full md:w-1/2">
+        <h2
+          class="text-up js-scroll text-2xl lg:text-[42px] leading-[30px] lg:leading-[48px] text-left text-black font-extrabold"
+        >
+          Improved Work Order Maintenance
+        </h2>
+        <p
+          class="text-up js-scroll mt-7 md:mt-9 text-[#282828] text-[20px] leading-[26px] font-sans font-[400]"
+        >
+          Create work plans and maintain multiple maintenance schedules running
+          at different frequencies and locations to deliver consistent service.
+          Better manage your maintenance spend and simplify workflows by
+          documenting time spent on work orders, understanding breakdowns, and
+          optimizing wrench time.
+        </p>
+        <hr
+          class="text-up js-scroll h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"
+        />
+        <ul class="text-up js-scroll fa-ul" style="margin-left:20px;">
+          <li class="mb-4 text-[#282828] text-[18px] font-sans font-[400]">
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Make workloads and deadlines manageable by distributing them to
+            your field service team evenly
+          </li>
+          <li
+            class="mb-4 text-[#282828] text-[18px] leading-[24px] font-sans font-[400]"
+          >
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Set up multiple recurring schedules to be repeated on a calendar or
+            runtime basis
+          </li>
+          <li
+            class="mb-4 text-[#282828] text-[18px] leading-[24px] font-sans font-[400]"
+          >
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Add assets, contracts, parts, and services as needed
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

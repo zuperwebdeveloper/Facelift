@@ -1,0 +1,46 @@
+---
+import bestappstar from "../../images/best-app-star.png";
+import topsoftstart from "../../images/top-soft-start.png";
+import womhero from "../../images/solution/wom-hero.png";
+import { Image } from "astro:assets";
+---
+
+<section class="HeroBanner">
+  <div
+    class="grid max-w-screen-xl px-4 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12 container py-8 lg:pb-20"
+  >
+    <div class="mr-auto place-self-center lg:col-span-6">
+      <h1
+        class="font-Jakarta text-[44px] lg:text-[64px] leading-[50px] lg:leading-[76px] text-[#282828] font-extrabold pb-7"
+      >
+        <span
+          class="text-[#939393] text-[20px] font-medium leading-[normal] block"
+          >Work Order Management</span
+        >Manage your field service work orders with ease
+      </h1>
+      <p
+        class="max-w-2xl mb-6 font-normal lg:mb-14 text-lg md:text-2xl text-[#12344D]"
+      >
+        Automate, manage, prioritize, and organize work orders, job requests,
+        technician schedules, and dispatching all in one place for more
+        efficient operations, improved workflows and work order tracking.
+      </p>
+      <a
+        href="javascript:;"
+        class="common_bt inline-block border justify-center md:justify-start bg-[#FD5000] text-white hover:bg-white hover:text-[#FD5000] hover:border-[#FD5000]"
+        title="Get a Free Demo">Get a Free Demo</a
+      >
+      <a
+        href="javascript:;"
+        class="common_bt inline-block bg-white border-[1px] border-[#FD5000] justify-center md:justify-start text-[#FD5000] hover:bg-[#12344D] hover:text-white hover:border-[#12344D] md:ml-9 mt-4 md:mt-0"
+        title="14-Day Free Trial">14-Day Free Trial</a
+      >
+    </div>
+    <div class="hidden lg:mt-0 lg:col-span-6 lg:flex lg:justify-end">
+      <Image class="object-contain" src={womhero} alt="mockup" />
+    </div>
+  </div>
+  <hr
+    class="container text-up js-scroll h-px my-2 border-1 border-[#12344D80]"
+  />
+</section>

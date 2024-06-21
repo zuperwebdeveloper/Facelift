@@ -1,0 +1,113 @@
+---
+import { Image } from "astro:assets";
+import mobile_app_page1 from "../../images/solution/mobile_app_page_1.png";
+import mobile_app_page2 from "../../images/solution/mobile_app_page_2.png";
+import mobile_app_page3 from "../../images/solution/mobile_app_page_3.png";
+---
+
+<section class="py-12 md:pt-28 md:pb-28">
+  <div class="container">
+    <div class="flex flex-col gap-16 md:flex-row items-centerl">
+      <div class="w-full md:w-1/2">
+        <h2
+          class="text-up js-scroll text-2xl lg:text-[42px] leading-[30px] lg:leading-[48px] text-left text-black font-extrabold"
+        >
+          Create Checklists And Fields For Your Unique Needs
+        </h2>
+        <p
+          class="text-up js-scroll mt-7 md:mt-9 text-[#282828] text-[20px] leading-[26px] font-sans font-[400]"
+        >
+          Tailor checklists, contracts, and field requirements to your
+          organization's specific needs. Add or remove steps from checklists,
+          and make fields required, read-only, or hidden. Automate tasks and
+          improve data collection for seamless workflows.
+        </p>
+        <hr
+          class="text-up js-scroll h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"
+        />
+        <ul class="text-up js-scroll fa-ul" style="margin-left:20px;">
+          <li class="mb-4 text-[#282828] text-[18px] font-sans font-[400]">
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Choose from a variety of templates or configure your own fields for
+            your organization's specific needs
+          </li>
+          <li
+            class="mb-4 text-[#282828] text-[18px] leading-[24px] font-sans font-[400]"
+          >
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Add an unlimited number of custom fields, forms, and views
+          </li>
+          <li
+            class="text-[#282828] text-[18px] leading-[24px] font-sans font-[400]"
+          >
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Frictionless documentation with photos, pdfs, videos, and files
+            helps you avoid rework
+          </li>
+        </ul>
+      </div>
+      <div
+        class="text-up js-scroll w-full md:w-1/2 flex md:justify-center lg:justify-end"
+      >
+        <Image
+          src={mobile_app_page3}
+          class="align-middle object-contain"
+          alt="Blog Image"
+        />
+      </div>
+    </div>
+    <!-- next left img right content -->
+    <div
+      class="pt-28 flex flex-col-reverse gap-16 md:flex-row items-centerl gap-x-5 md:gap-y-5"
+    >
+      <div
+        class="text-up js-scroll w-full md:w-1/2 flex md:justify-center lg:justify-start"
+      >
+        <Image
+          src={mobile_app_page2}
+          class="align-middle object-contain"
+          alt="Blog Image"
+        />
+      </div>
+      <div class="w-full md:w-1/2">
+        <h2
+          class="text-up js-scroll text-2xl lg:text-[42px] leading-[30px] lg:leading-[48px] text-left text-black font-extrabold"
+        >
+          Supercharge Your Team's Productivity
+        </h2>
+        <p
+          class="text-up js-scroll mt-7 md:mt-9 lg:pr-[27%] text-[#282828] text-[20px] leading-[26px] font-sans font-[400]"
+        >
+          Mobile work orders are an essential tool for distributed teams.
+          Empower your teams to get the job done faster, and save time. Provide
+          your field service and back-office teams with a truly mobile,
+          intuitive workforce management app.
+        </p>
+        <hr
+          class="text-up js-scroll h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"
+        />
+        <ul class="text-up js-scroll fa-ul" style="margin-left:20px;">
+          <li class="mb-4 text-[#282828] text-[18px] font-sans font-[400]">
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Automatically create work orders and send mobile push notifications
+            to technicians when assigned
+          </li>
+          <li
+            class="mb-4 text-[#282828] text-[18px] leading-[24px] font-sans font-[400]"
+          >
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Newly enhanced Job Level Time Log enables field techs to clock in
+            and out of a job from the field
+          </li>
+          <li
+            class="mb-4 text-[#282828] text-[18px] leading-[24px] font-sans font-[400]"
+          >
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Provide a transparent record of inspections and checklists
+            completed by technicians for recurring work orders
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

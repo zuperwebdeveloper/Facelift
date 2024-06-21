@@ -130,6 +130,18 @@ body {
   height: 100%;
   scroll-behavior: smooth;
   scroll-padding-top: 20px;
+
+  &.hide-overflow {
+    overflow: hidden;
+  }
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: #000;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #fd5000;
+    border-radius: 10px;
+  }
 }
 
 body {

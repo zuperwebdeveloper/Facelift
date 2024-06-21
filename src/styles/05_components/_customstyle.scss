@@ -102,12 +102,12 @@
 .tab-button {
   padding: 20px 0 20px 30px;
   cursor: pointer;
-  border-bottom: 1px solid #12344d80;
+  border-bottom: 1px solid #29333a;
   outline: none;
   text-align: left;
   transition: background-color 0.3s;
   position: relative;
-  color: #c7c7c7;
+  color: #2c363d;
   font-size: 24px;
   font-weight: 500;
   &.active {
@@ -122,6 +122,12 @@
     &:first-child {
       border-top: 0;
     }
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+  &:last-child {
+    border-bottom: 0;
   }
 }
 
@@ -151,6 +157,12 @@ ul.features_list {
   @media (min-width: 991px) {
     max-height: 420px;
     overflow-y: scroll;
+  }
+}
+.wom_fl {
+  @media (min-width: 991px) {
+    max-height: none !important;
+    overflow-y: unset !important;
   }
 }
 .short_note {
