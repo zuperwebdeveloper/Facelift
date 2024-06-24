@@ -146,7 +146,7 @@
       line-height: normal;
       padding-bottom: 35px;
       @media screen and (min-width: 1118px) {
-        padding-bottom: 35px;
+        padding-bottom: 20px;
       }
       &::before {
         content: "";
@@ -279,8 +279,8 @@
   &__logo {
     display: inline-flex;
     & img {
-      width: 96px;
-      height: 28px;
+      width: 120px;
+      // height: 28px;
     }
   }
   &__toggle {

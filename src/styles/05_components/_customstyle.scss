@@ -178,3 +178,19 @@ ul.features_list {
   transition: all ease-in 0.5s;
   transition-delay: 0.8s;
 }
+
+.feature_list {
+  margin: 0;
+  li {
+    display: flex;
+    &::before {
+      content: "";
+      background-image: url(/src/images/list-icon.svg);
+      width: 22px;
+      display: inline-flex;
+      height: 22px;
+      background-repeat: no-repeat;
+      padding-right: 35px;
+    }
+  }
+}
